@@ -1,6 +1,6 @@
 # people-table
 
-https://gitkurmax.github.io/people-table
+https://gitkurmax.github.io/table-people
 
 People table  
 DOM  
