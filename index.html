@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>People-table</title>
+</head>
+<body>
+    <div class="forms">
+      <form name="filter">
+          <fieldset>
+            <legend>Filter table by</legend>
+            <section>
+              <label>Name
+                <input name="check" type="radio" value="name" checked>
+              </label>
+              <label>Mother
+                <input name="check" type="radio" value="mother">
+              </label>
+              <label>Father
+                <input name="check" type="radio" value="father">
+              </label>
+            </section>
+            <label class="filter__label">Enter Name
+              <input type="text" class="filter__input">
+            </label>
+            <button class="show_filtered">Filter</button>
+            <button class="show_full">Show full table</button>
+          </fieldset>
+        </form>
+        <form name="add_people" id="add_person">
+          <fieldset>
+            <legend>Add people to the table</legend>
+            <label>Full name
+                <input type="text" class="name">
+            </label>
+            <section>
+              <label>Male
+                <input name="sex" type="radio" value="m" >
+              </label>
+              <label>Female
+                <input name="sex" type="radio" value="f">
+              </label>
+            </section>
+            <section>
+              <label>Born
+                <input type="text" class="born__input" maxlength="4" size="4">
+              </label>
+              <label>Died
+                  <input type="text" class="die__input" maxlength="4" size="4">
+              </label>
+            </section>
+            <label>Mother
+                <input type="text" class="mother__input">
+            </label>
+            <label>Father
+                <input type="text" class="father__input">
+            </label>
+            <button class="add_button">Add</button>
+          </fieldset>
+        </form>
+    </div>
+    <div class="people"></div>
+  <script src="people.js"></script>
+  <script src="script.js"></script>
+  <script src="sort.js"></script>
+  <script src="filter.js"></script>
+  <script src="add_people.js"></script>
+</body>
+</html>
